@@ -1,0 +1,40 @@
+name: Cloudflare DNS Mangement updated
+description: create and update DNS records for cloudflare 
+author: Nicolas Martinez V <nicolas@42devs.cl>
+
+runs:
+  using: node20
+  main: index.js
+
+outputs:
+  record_id: 
+    description: Record ID  
+  name:
+    description: Affected domain
+
+branding:
+  icon: cloud
+  color: orange
+
+inputs:
+  type:
+    description: 'DNS record type: eg "A", "CNAME", etc'
+    required: true
+  name:
+    description: DNS record name
+    required: true
+  content:
+    description: DNS record content, can be an IP or text
+    required: true
+  ttl:
+    description: Time to live for DNS, value of 1 is automatic
+    default: "1"
+  proxied:
+    description: "Whether the record is receiving the performance and security benefits of Cloudflare"
+    default: "false"
+  token: 
+    description: CloudFlare Token id 
+    required: true
+  zone:
+    description: CloudFlare zoneid
+    required: true 
