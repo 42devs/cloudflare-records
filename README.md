@@ -81,13 +81,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 For more information, visit the [GitHub repository](https://github.com/your-username/your-repo).
-```
-
-### Key Points:
-1. **Usage Section**: Provides a clear example of how to use the action in a workflow.
-2. **Inputs and Outputs**: Lists all inputs and outputs with descriptions and default values.
-3. **Example Workflow**: Includes a complete example workflow for users to copy and adapt.
-4. **Branding**: Matches the branding metadata (`icon` and `color`) provided in the `action.yml`.
-5. **Author and License**: Credits the author and includes licensing information.
-
-Make sure to replace `your-username/your-repo` with the actual repository path where your action is hosted. This README will help users quickly understand and use your GitHub Action.
