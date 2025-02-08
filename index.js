@@ -107,11 +107,14 @@ const updateRecord = async(id) => {
   }
 }
 
-const id = await getCurrentRecordId();
 
-if (id) {
-  updateRecord(id);
-  process.exit(0);
-}
+getCurrentRecordId()
+  .then(async (id) => {
+    if (id) {
+      await updateRecord(id);
+    } else {
+      await createRecord();
+    }
+    process.exit(0)
+  })
 
-createRecord();
