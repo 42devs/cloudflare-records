@@ -3,7 +3,7 @@ description: create and update DNS records for cloudflare
 author: Nicolas Martinez V <nicolas@42devs.cl>
 
 runs:
-  using: node20
+  using: node24
   main: index.js
 
 outputs:
