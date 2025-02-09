@@ -1,5 +1,5 @@
 name: Cloudflare DNS Mangement updated
-description: create and update DNS records for cloudflare 
+description: create and update DNS records for cloudflare
 author: Nicolas Martinez V <nicolas@42devs.cl>
 
 runs:
@@ -7,8 +7,8 @@ runs:
   main: dist/index.js
 
 outputs:
-  record_id: 
-    description: Record ID  
+  record_id:
+    description: Record ID
   name:
     description: Affected domain
 
@@ -28,13 +28,15 @@ inputs:
     required: true
   ttl:
     description: Time to live for DNS, value of 1 is automatic
-    default: "1"
+    default: '1'
   proxied:
-    description: "Whether the record is receiving the performance and security benefits of Cloudflare"
-    default: "false"
-  token: 
-    description: CloudFlare Token id 
+    description:
+      'Whether the record is receiving the performance and security benefits of
+      Cloudflare'
+    default: 'false'
+  token:
+    description: CloudFlare Token id
     required: true
   zone:
     description: CloudFlare zoneid
-    required: true 
+    required: true
