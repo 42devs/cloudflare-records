@@ -19,6 +19,7 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "ES2022",
+    "sourceMap": true,
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
