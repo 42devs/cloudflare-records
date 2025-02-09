@@ -7692,7 +7692,7 @@ const baseURL = 'https://api.cloudflare.com/client/v4/zones';
 
 const headers = {
         'Authorization': `Bearer ${token}`,
-        'Content-type': 'application/json',i
+        'Content-type': 'application/json',
       };
 
   const recordData = {
