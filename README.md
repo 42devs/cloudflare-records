@@ -9,7 +9,7 @@ To use this action, add the following step to your GitHub Actions workflow:
 
 ```yaml
 - name: Manage Cloudflare DNS
-  uses: your-username/your-repo@v1
+  uses: 42devs/cloudflare-records@v1
   with:
     type: 'A' # DNS record type (e.g., "A", "CNAME", etc.)
     name: 'example.com' # DNS record name
@@ -84,4 +84,4 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 For more information, visit the
-[GitHub repository](https://github.com/your-username/your-repo).
+[GitHub repository](https://github.com/42devs/cloudflare-records).
