@@ -1,0 +1,27 @@
+{
+  "name": "cloudflare-records",
+  "version": "1.0.0",
+  "description": "This GitHub Action allows you to create and update DNS records for Cloudflare. It is designed to simplify DNS management within your CI/CD workflows.",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^22.13.4"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^3.0.2",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "deepmerge": "^4.3.1",
+    "rimraf": "^6.0.1",
+    "rollup": "^3.29.5",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc && rollup -c rollup.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
+}

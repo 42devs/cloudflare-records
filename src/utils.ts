@@ -1,4 +1,4 @@
-import { MissingEnvironmentError } from 'errors';
+import { MissingEnvironmentError } from './errors';
 
 // Utility Functions
 export const validateEnvironment = (): void => {
