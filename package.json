@@ -4,12 +4,13 @@
   "description": "This GitHub Action allows you to create and update DNS records for Cloudflare. It is designed to simplify DNS management within your CI/CD workflows.",
   "main": "dist/index.js",
   "dependencies": {
-    "@types/node": "^22.13.4"
+    "@actions/core": "^1.11.1"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^3.0.2",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
+    "@types/node": "^22.13.4",
     "deepmerge": "^4.3.1",
     "rimraf": "^6.0.1",
     "rollup": "^3.29.5",

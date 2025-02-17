@@ -1,3 +1,5 @@
+import * as core from '@actions/core';
+
 import { MissingEnvironmentError } from './errors';
 
 // Utility Functions
@@ -19,9 +21,9 @@ export const validateEnvironment = (): void => {
 };
 
 export const logError = (message: string): void => {
-  console.error(`::error ::${message}`);
+  core.setFailed(`::error ::${message}`);
 };
 
 export const logOutput = (name: string, value: string): void => {
-  console.log(`::set-output name=${name}::${value}`);
+  core.setFailed(`::set-output name=${name}::${value}`);
 };

@@ -1,3 +1,4 @@
+import * as core from '@actions/core';
 import { DNSRecord } from './interface';
 import { logError, validateEnvironment } from './utils';
 import { RecordType } from './enum';
@@ -37,11 +38,10 @@ const main = async (): Promise<void> => {
     process.exit(0);
   } catch (error) {
     if (error instanceof Error) {
-      logError(error.message);
+      core.setFailed(error.message);
     } else {
       logError('An unknown error occurred');
     }
-    process.exit(1);
   }
 };
 
