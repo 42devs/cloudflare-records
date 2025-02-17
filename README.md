@@ -9,7 +9,7 @@ To use this action, add the following step to your GitHub Actions workflow:
 
 ```yaml
 - name: Manage Cloudflare DNS
-  uses: 42devs/cloudflare-records@v1
+  uses: 42devs/cloudflare-records@v2
   with:
     type: 'A' # DNS record type (e.g., "A", "CNAME", etc.)
     name: 'example.com' # DNS record name
@@ -56,7 +56,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Manage Cloudflare DNS
-        uses: 42devs/cloudflare-records@v1
+        uses: 42devs/cloudflare-records@v2
         with:
           type: 'A'
           name: 'example.com'
